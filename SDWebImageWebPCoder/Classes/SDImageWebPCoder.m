@@ -596,6 +596,7 @@ WEBP_CSP_MODE ConvertCSPMode(CGBitmapInfo bitmapInfo) {
     }
     config.output.colorspace = mode;
     config.options.use_threads = 1;
+    config.options.no_fancy_upsampling = 1; // Set no_fancy_upsampling to true by default
     
     
     // Use scaling for thumbnail
